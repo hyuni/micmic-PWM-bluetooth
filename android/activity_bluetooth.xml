@@ -1,0 +1,50 @@
+<!-- 
+	Microcontroladores e Microprocessadores 
+	Android e Bluetooth (Layout)
+	Authors: Nov 2013
+	11080000401 - Cássio Trindade Batista 
+	11080001401 - Gabriel Peixoto de Carvalho 
+	11080004701 - Thiago Barros Coelho 
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:paddingBottom="@dimen/activity_vertical_margin"
+	android:paddingLeft="@dimen/activity_horizontal_margin"
+	android:paddingRight="@dimen/activity_horizontal_margin"
+	android:paddingTop="@dimen/activity_vertical_margin"
+	android:background="@android:color/background_dark"
+	tools:context=".Bluetooth" >
+
+	<TextView
+		android:id="@+id/textView1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="72dp"
+		android:textColor="@android:color/background_light"
+		android:textSize="60sp"
+		android:text="0" />
+
+	<SeekBar
+		android:id="@+id/seekBar1"
+		android:layout_width="260dp"
+		android:layout_centerHorizontal="true"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/textView1"
+		android:layout_marginTop="22dp" />
+
+	<CheckBox
+		android:id="@+id/reverse"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/seekBar1"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="46dp"
+		android:text="Inverter motor?"
+		android:textSize="20sp"
+		android:textColor="@android:color/background_light" />
+</RelativeLayout>
